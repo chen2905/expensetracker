@@ -11,11 +11,24 @@ export default (state,action)=>{
             console.log("Adding"+action.payload)
             return {
                 ...state,
-                transactions: [action.payload, ...state.transactions]
+                transactions: [...state.transactions,action.payload]
                 //[action.payload,
                //transactions:...state.transactions.push(action.payload)
                 
             } 
+            case 'GET_TRANSACTION':
+                console.log("GET"+action.payload)
+                return {
+                    ...state,
+                    loading:false,
+                    transactions: action.payload
+                } 
+                case 'TRANSACTION_ERROR':
+                    console.log("GET"+action.payload)
+                    return {
+                        ...state,
+                        error: action.payload
+                    } 
         default:
         return state
     }
