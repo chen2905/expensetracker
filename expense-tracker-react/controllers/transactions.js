@@ -2,7 +2,7 @@ const Transaction =require('../models/Transaction')
 
 //@desc   get all the transactions
 //@route  get /api/vi/transations
-//@acess public
+//@acess  public
 exports.getTransactions =async (req,res,next)=>{
     //res.send('Get transactions from transaction controller')
     try{
