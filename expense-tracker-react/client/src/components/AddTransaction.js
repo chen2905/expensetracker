@@ -1,3 +1,26 @@
+/*
+React events are written in camelCase syntax:
+
+onClick instead of onclick.
+
+React event handlers are written inside curly braces:
+
+onClick={shoot}  instead of onClick="shoot()".
+
+Just like in HTML, React uses forms to allow users to interact with the web page.
+
+Handling forms is about how you handle the data when it changes value or gets submitted.
+
+In HTML, form data is usually handled by the DOM.
+
+In React, form data is usually handled by the components.
+
+When the data is handled by the components, all the data is stored in the component state.
+
+You can control changes by adding event handlers in the onChange attribute:
+
+Note that we use event.preventDefault() to prevent the form from actually being submitted.
+*/
 import React ,{useState,useContext} from 'react'
 import {GlobalContext} from '../context/GlobalState'
 export const AddTransaction = () => {
