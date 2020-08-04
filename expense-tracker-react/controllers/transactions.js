@@ -1,5 +1,7 @@
 const Transaction =require('../models/Transaction')
-
+/* consider all those js files have export., models, controllers, routers are some kind modules, 
+they are the collections of functions can be used but require(..)
+*/
 //@desc   get all the transactions
 //@route  get /api/vi/transations
 //@acess  public
